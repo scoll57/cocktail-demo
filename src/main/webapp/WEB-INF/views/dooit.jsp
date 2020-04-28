@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 
-	<title>0</title>
+	<title>Demo</title>
 
 	<style>
 		html,

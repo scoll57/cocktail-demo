@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HyundaiCard Demo</title>
+    <title>Demo</title>
 </head>
 <body>
 Hello ${name}
