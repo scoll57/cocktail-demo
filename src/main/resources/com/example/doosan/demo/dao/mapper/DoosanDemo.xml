@@ -1,0 +1,40 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.doosan.demo.dao.IDoosanDemoMapper">
+	
+	<select id="getDevices" resultType="hashmap">
+		SELECT /* [DoosanDemo.xml].[getDevices] */
+			code_group_id fileId,
+			code fileType,
+			value fileNm,
+			description filePath,
+			sort_order resv5,
+			use_yn resv4
+		from codes
+		limit 30
+	</select>
+
+	<select id="getCodes" resultType="hashmap">
+		SELECT /* [DoosanDemo.xml].[getDevices] */
+			code_group_id fileId,
+			code fileType,
+			value fileNm,
+			description filePath,
+			sort_order resv5,
+			use_yn resv4
+		from codes
+		where code_group_id = 'AWS_REGION'
+	</select>
+
+	<select id="getCodes2" resultType="hashmap">
+		SELECT /* [DoosanDemo.xml].[getDevices] */
+			code_group_id fileId,
+			code fileType,
+			value fileNm,
+			description filePath,
+			sort_order resv5,
+			use_yn resv4
+		from codes
+		where code_group_id = 'GCP_REGION'
+	</select>
+
+</mapper>
